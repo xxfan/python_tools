@@ -1,0 +1,18 @@
+snapshots,type,nullable,default,primary key,index,AUTO_INCREMENT
+id,integer(32) unsigned,0,NULL,1,1,1
+table_name,varchar(128),1,NULL,0,1,0
+primary_key,varchar(128),1,NULL,0,1,0
+key_name,varchar(128),1,NULL,0,1,0
+snapshot,json,1,NULL,0,0,0
+operator,varchar(32),1,NULL,0,1,0
+operation,varchar(32),1,NULL,0,1,0
+,,,,
+user_action_record,type,nullable,default,primary key,index,
+record_uuid,varchar(64),0,NULL,1,1,
+user_name,varchar(32),0,NULL,0,1,
+url,text,0,NULL,0,0,
+req_method,varchar(16),0,NULL,0,1,
+req_body,text,1,NULL,0,0,
+resp_body,text,1,NULL,0,0,
+resp_code,integer,1,NULL,0,0,
+,,,,,,
